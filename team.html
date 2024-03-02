@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="" class="logo">Arduino</a>
+            <!--Nav-bar-->
+            <div class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="team.html" class="nav-link">Team</a>
+            </div>
+            <!--Nav-Icons-->
+            <div class="nav-icons">
+                <a href="sign in.html" class="nav-link"><i class='bx bxs-user-circle'></i></a>
+                <a href="#"></a><i class='bx bx-shopping-bag' id="cart-icon" ></i></a>
+                <a href="profile.html" class="nav-link"><img src="Designer.jpg" class="user-pic"></a>
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <div class="cart-content">
+                    </div>
+                    <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!--Buy Button-->
+                    <button type="button" class="btn-buy">Buy Now</button>
+                    <!--Cart Close-->
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--Reviews-->
+    <section class="reviews container" id="reviews">
+        <div class="heading">
+            <h2>Meet Our Experts</h2>
+        </div>
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <!--Slide 1-->
+      <div class="swiper-slide">
+        <div class="reviews-box">
+            <img src="fabio-violante ceo.png" alt="">
+            <h2>Fabio Violante</h2>
+            <span>Chief Executive Officer</span>
+            <p>Working with Arduino since late 2015, and became CEO in 2017. Prior to joining Arduino, he co-founded enterprise software firm Neptuny,
+                before selling it to BMC Software and acting as CTO for five years.</p>
+        </div>
+      </div>
+              <!--Slide 2-->
+              <div class="swiper-slide">
+                <div class="reviews-box">
+                    <img src="massimo-banzi co-founder, Chariman, &cmo.png" alt="">
+                    <h2>Massimo Banzi</h2>
+                    <span>Co-founder, Chairman & CMO</span>
+                    <p>Interaction designer, educator, open-source hardware pioneer, and TED speaker. His background is in electrical engineering, 
+                        but he spent most of his early career working as a software architect before spending four years at the Interaction Design Institute Ivrea as an Associate Professor.</p>
+                </div>
+              </div>
+                     <!--Slide 3-->
+                     <div class="swiper-slide">
+                        <div class="reviews-box">
+                            <img src="pietro-dore coo.png" alt="">
+                            <h2>Pietro Dore</h2>
+                            <span>Chief Operating Officer</span>
+                            <p>Joined Arduino in 2014 following more than 15 years of executive 
+                                experience at high-growth tech companies across Europe. Prior to that, he was a Senior Manager at Bain & Co. Pietro 
+                                holds an MBA from Columbia Business School.</p>
+                        </div>
+                      </div>
+
+                                   <!--Slide 4-->
+              <div class="swiper-slide">
+                <div class="reviews-box">
+                    <img src="david-cuartielles.png" alt="">
+                    <h2>David Cuartielles</h2>
+                    <span>Co-founder & Content Lead</span>
+                    <p>David is a university lecturer and leads the Content Unit at Arduino.
+                        He holds an MSc in Telecommunications Engineering and a PhD in Interaction Design, and has lectured at Malmö University in Sweden since 2000. David has been a visiting scholar at universities in the Americas, Europe, and Asia, has written several books on programming, and is an international speaker
+                         on open-source hardware and STEAM education.
+                    </p>
+                </div>
+              </div>
+
+                           <!--Slide 5-->
+                           <div class="swiper-slide">
+                            <div class="reviews-box">
+                                <img src="giuseppe-ferrara.png" alt="">
+                                <h2>Giuseppe Ferrara</h2>
+                                <span>Global Finance Director</span>
+                                <p>Giuseppe has been with Arduino since 2017 and has more than 20 years of experience in the finance field, with 
+                                    experience across different sectors in Italy and the UK.</p>
+                            </div>
+                          </div>
+
+                                       <!--Slide 6-->
+              <div class="swiper-slide">
+                <div class="reviews-box">
+                    <img src="tom-igoe.png" alt="">
+                    <h2>Tom Igoe</h2>
+                    <span>Co-founder</span>
+                    <p> He is the area head for physical computing courses, in which students learn to consider the motivations and actions of the people for whom 
+                        they're designing as the foundation for physical interaction design. His research interests also include networks, lighting design, the environmental and social impacts 
+                        of technology development, and monkeys.</p>
+                </div>
+              </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>    
+    </section>
+    <!--Footer-->
+    <section class="footer container">
+        <div class="footer-box">
+            <a href="#" class="logo">Arduino</a>
+            <div class="social">
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+    </section>
+    <!--Copyright-->
+    <p class="copyright">&#169; Tinininiw</p>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--JavaScript Link-->
+    <script src="main.js"></script>
+</body>
+</html>

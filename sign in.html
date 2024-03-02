@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Log in</title>
+    <link rel="stylesheet" href="sign in.css">
+</head>
+<body>
+    <video autoplay muted plays-inline class="back-video">
+        <source src="bgvideo.mp4">
+    </video>
+
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <form action="">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="remember">
+                    <label for=""><input type="checkbox">Remember me</label>
+                </div>
+                <button type="submit"><a href="index.html">Log In</a></button>
+                <div class="signUp-link">
+                    <p>Already have an account? <a href="#" class="signUpBtn-link">Log In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+<script>
+    const signInBtnLink = document.querySelector('.sigInBtn-link');
+    const signUpBtnLink = document.querySelector('.sigUpBtn-link');
+    const wrapper = document.querySelector('.wrapper');
+
+    signUpBtnLink.addEventListener('click', () => {
+        wrapper.classList.toggle('active');
+    });
+
+    signInBtnLink.addEventListener('click', () => {
+        wrapper.classList.toggle('active');
+    });
+
+</script>
+
+
+</body>
+</html>

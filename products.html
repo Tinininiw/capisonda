@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Shop</title>
+    <link rel="stylesheet" href="products.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="" class="logo">Arduino</a>
+            <!--Nav-bar-->
+            <div class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="team.html" class="nav-link">Team</a>
+            </div>
+            <!--Nav-Icons-->
+            <div class="nav-icons">
+                <a href="sign in.html" class="nav-link"><i class='bx bxs-user-circle'></i></a>
+                <a href="#"></a><i class='bx bx-shopping-bag' id="cart-icon" ></i></a>
+                <a href="profile.html" class="nav-link"><img src="Designer.jpg" class="user-pic"></a>
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <div class="cart-content">
+                    </div>
+                    <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!--Buy Button-->
+                    <button type="button" class="btn-buy">Buy Now</button>
+                    <!--Cart Close-->
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Products-->
+    <section class="shop container" id="products">
+        <h2 class="section-title"></h2>
+
+        <div class="container-fluid">
+            <div class="containers">
+                <div class="search">
+                    <h1>List of Products</h1>
+                    <input type="text" name="" id="find" placeholder="Search here...." onkeyup="search()">
+
+                </div>
+            </div>
+        </div>
+        <!--Content-->
+        <div class="shop-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="1.png" alt="" class="product-img">
+                <h2 class="product-title">Mini Arduino</h2>
+                <span class="price">$100</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        <!--Box 2-->
+        <div class="product-box">
+            <img src="2.png" alt="" class="product-img">
+            <h2 class="product-title">Arduino ESP 8266</h2>
+            <span class="price">$129</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 3-->
+        <div class="product-box">
+            <img src="3.png" alt="" class="product-img">
+            <h2 class="product-title">Arduino</h2>
+            <span class="price">$157</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 4-->
+        <div class="product-box">
+            <img src="4.png" alt="" class="product-img">
+            <h2 class="product-title">Arduino Uno</h2>
+            <span class="price">$647</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 5-->
+        <div class="product-box">
+            <img src="5.png" alt="" class="product-img">
+            <h2 class="product-title">Arduino Mega</h2>
+            <span class="price">$67</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 6-->
+        <div class="product-box">
+            <img src="6.png" alt="" class="product-img">
+            <h2 class="product-title">Ultrasonic Sensor</h2>
+            <span class="price">$129</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 7-->
+        <div class="product-box">
+            <img src="7.png" alt="" class="product-img">
+            <h2 class="product-title">Micro Servo</h2>
+            <span class="price">$89</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+        <div class="product-box">
+            <img src="8.png" alt="" class="product-img">
+            <h2 class="product-title">Gas Sensor</h2>
+            <span class="price">$146</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 9-->
+        <div class="product-box">
+            <img src="9.png" alt="" class="product-img">
+            <h2 class="product-title">Soil Sensor</h2>
+            <span class="price">$76</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 10-->
+        <div class="product-box">
+            <img src="10.png" alt="" class="product-img">
+            <h2 class="product-title">MQ 135 </h2>
+            <span class="price">$546</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 11-->
+        <div class="product-box">
+            <img src="11.png" alt="" class="product-img">
+            <h2 class="product-title">Relay</h2>
+            <span class="price">$116</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 12-->
+        <div class="product-box">
+            <img src="12.png" alt="" class="product-img">
+            <h2 class="product-title">Jumper wires</h2>
+            <span class="price">$96</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 13-->
+        <div class="product-box">
+            <img src="13.png" alt="" class="product-img">
+            <h2 class="product-title">Breadboard</h2>
+            <span class="price">$46</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 14-->
+        <div class="product-box">
+            <img src="14.png" alt="" class="product-img">
+            <h2 class="product-title">Resistor</h2>
+            <span class="price">$10</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 15-->
+        <div class="product-box">
+            <img src="15.png" alt="" class="product-img">
+            <h2 class="product-title">LED Lights</h2>
+            <span class="price">$20</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 16-->
+        <div class="product-box">
+            <img src="16.png" alt="" class="product-img">
+            <h2 class="product-title">Solid wires</h2>
+            <span class="price">15</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 17-->
+        <div class="product-box">
+            <img src="17.png" alt="" class="product-img">
+            <h2 class="product-title">Humidity Sensor</h2>
+            <span class="price">96</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 18-->
+        <div class="product-box">
+            <img src="18.png" alt="" class="product-img">
+            <h2 class="product-title">Proximity Sensor</h2>
+            <span class="price">196</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 19-->
+        <div class="product-box">
+            <img src="19.png" alt="" class="product-img">
+            <h2 class="product-title">Mini Servo</h2>
+            <span class="price">93</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 20-->
+        <div class="product-box">
+            <img src="20.png" alt="" class="product-img">
+            <h2 class="product-title">Pan-Tilt Servo</h2>
+            <span class="price">47</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 21-->
+        <div class="product-box">
+            <img src="21.png" alt="" class="product-img">
+            <h2 class="product-title">Flame Sensor</h2>
+            <span class="price">415</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 22-->
+        <div class="product-box">
+            <img src="22.png" alt="" class="product-img">
+            <h2 class="product-title">MiniBreadboard</h2>
+            <span class="price">15</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 23-->
+        <div class="product-box">
+            <img src="23.png" alt="" class="product-img">
+            <h2 class="product-title">Push Button Switch</h2>
+            <span class="price">75</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 24-->
+        <div class="product-box">
+            <img src="24.png" alt="" class="product-img">
+            <h2 class="product-title">Arduino Water Pump</h2>
+            <span class="price">154</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        </div>
+    
+</section>
+
+    <div class="swiper-pagination"></div>
+  </div>    
+    </section>
+    <!--Footer-->
+    <section class="footer container">
+        <div class="footer-box">
+            <a href="#" class="logo">Arduino</a>
+            <div class="social">
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+    </section>
+    <!--Copyright-->
+    <p class="copyright">&#169; Tinininiw</p>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--JavaScript Link-->
+    <script src="main.js"></script>
+</body>
+</html>
